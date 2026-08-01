@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 30px;
+            background: lightcoral;
+            color: black;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,
+        textarea {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            border-radius: 30px;
+            align-self: center;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="content">
+        <h2>Here is the contact page</h2>
+        <p>Have a question about anything? Please contact us below.</p>
+
+        <form>
+            <label for="name">Your name</label>
+            <input type="text" id="name" placeholder="Enter name">
+
+            <label for="email">Your email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="message">Transmission</label>
+            <textarea id="message" rows="5" placeholder="Type your message here"></textarea>
+
+
+            <button type="submit">Click to send message</button>
+        </form>
+    </section>
+</body>
+
+</html>
