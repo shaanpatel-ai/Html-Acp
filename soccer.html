@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Slider</title>
+    <style>
+    body {
+  background: lightcoral;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  margin: 0;
+}
+
+.slider {
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+section{
+    background-color: cyan;
+    border-radius: 30px;
+    width: 400px;
+    text-align: center;
+    height: 470px;
+}
+    </style>
+   
+</head>
+
+<body>
+    <header><h1><section style="height: 40px;">Soccer</section></header>
+    <section>
+    <script>
+        const images = [
+                "https://i.pinimg.com/564x/42/77/ae/4277ae71a295e64b2148519aca4042cd.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl2p0lvTZBN93hIl2wjULbR0W-5ubpLNzfjun01s8cAg&s=10",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRQkay9Sy2fMopHr8FLGjPMCVYFeUGSwg_7xx50C5PUOW2j1xJodUtl_OP&s=10"
+            ];
+
+            let current = 0;
+
+            function soccer() {
+                current++;
+                if (current >= images.length) {
+                    current = 0;
+                }
+                document.getElementById("slide").src = images[current];
+            }
+
+            function previous() {
+                current--;
+                if (current < 0) {
+                    current = images.length - 1;
+                }
+                document.getElementById("slide").src = images[current];
+            }
+    </script>
+    <div class="slider">
+        <link rel="stylesheet" href="java script.js">
+        <link rel="stylesheet" href="index.html">
+        <img id="slide" src="https://i.pinimg.com/564x/42/77/ae/4277ae71a295e64b2148519aca4042cd.jpg" alt="sorry this image is not avaible ">
+        <div class="buttons">
+            <button onclick="previous()">☜</button>
+            <button onclick="soccer()">☞</button>
+        </div>
+    </div>
+</section>
+<br><br><br><br><br>
+<section>
+    
+    <h1>About Soccer</h1>
+    <p>Soccer, also known globally as association football, is the world's most popular sport, played by two teams of 11 players on a rectangular grass field with the main goal of scoring more points than the opponent.</p>
+    <br>
+    <h1>History Of Soccer</h1>
+    <p>Soccer traces its roots from ancient kicking games in China to codified rules in 19th-century England, key milestones
+    including ancient cuju, medieval mob football, and the 1863 formation of The Football Association.</p>
+</section>
+</body>
+
+</html>
