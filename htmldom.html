@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Multiplication</title>
+</head>
+
+<body>
+
+    <h1>Multiplication Result:</h1>
+    <p>of 9 x 6</p>
+    <p> is: <span id="answerHere"></span></p>
+    <!-- We added a 'span' tag with an 'id' here! -->
+
+    <script>
+        let numA = 9;
+        let numB = 6;
+        let product = numA * numB;
+
+        // This is the DOM part!
+        // 1. Find the element with the id "answerHere"
+        let answerSpot = document.getElementById("answerHere");
+
+        // 2. Change its text to show our product
+        answerSpot.textContent = product;
+    </script>
+
+</body>
+
+</html>
